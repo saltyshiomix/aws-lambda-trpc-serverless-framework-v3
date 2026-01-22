@@ -1,0 +1,35 @@
+service: aws-lambda-trpc-serverless-framework-v3
+
+useDotenv: true
+
+provider:
+  name: aws
+  stage: ${opt:stage}
+  runtime: nodejs20.x
+  region: ${self:provider.environment.REGION}
+  deploymentBucket:
+    name: aws-lambda-trpc-serverless-framework-v3-deployment
+  environment:
+    REGION: ${env:REGION}
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+
+custom:
+  esbuild:
+    minify: true
+    sourcemap: true
+    watch:
+      pattern: ['./**/*.ts']
+  serverless-offline:
+    httpPort: 4000
+
+functions:
+  app:
+    handler: src/handlers/app.handler
+    events:
+      - http:
+          path: '{proxy+}'
+          method: any
+          cors: true
