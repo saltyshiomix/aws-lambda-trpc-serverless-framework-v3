@@ -5,7 +5,7 @@ import prettierConfig from 'eslint-config-prettier'
 
 export default defineConfig(
   {
-    ignores: ['.vscode', '.serverless'],
+    ignores: ['.vscode', '.esbuild'],
   },
   {
     files: ['**/*.ts'],
