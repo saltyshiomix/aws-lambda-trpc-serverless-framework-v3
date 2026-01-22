@@ -8,7 +8,11 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "noEmit": true,
     "allowJs": true,
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/lib/*": ["lib/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.mts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

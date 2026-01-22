@@ -5,9 +5,12 @@
     "dev": "next"
   },
   "dependencies": {
+    "@aws-lambda-trpc-serverless-framework-v3/api": "workspace:*",
+    "@trpc/client": "^11.8.1",
     "next": "^16.1.4",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "superjson": "^2.2.6"
   },
   "devDependencies": {
     "@types/node": "^25.0.10",
