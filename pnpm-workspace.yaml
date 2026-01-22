@@ -10,3 +10,4 @@ onlyBuiltDependencies:
   - esbuild
   - lefthook
   - serverless
+  - sharp

@@ -5,10 +5,10 @@ import prettierConfig from 'eslint-config-prettier'
 
 export default defineConfig(
   {
-    ignores: ['.vscode', '**/.esbuild/*'],
+    ignores: ['.vscode', '**/.next/*', '**/next-env.d.ts', '**/.esbuild/*'],
   },
   {
-    files: ['**/*.ts'],
+    files: ['**/*.ts', '**/*.tsx'],
   },
   eslint.configs.recommended,
   tseslint.configs.recommended,

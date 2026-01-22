@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "web",
+  "scripts": {
+    "dev": "next"
+  },
+  "dependencies": {
+    "next": "^16.1.4",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "@types/react": "^19.2.9",
+    "typescript": "^5.9.3"
+  }
+}
