@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "api",
+  "scripts": {
+    "local": "sls offline start --stage=local --reloadHandler"
+  },
+  "dependencies": {
+    "@trpc/server": "^11.8.1",
+    "superjson": "^2.2.6",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.160",
+    "@types/node": "^25.0.10",
+    "serverless": "^3.40.0",
+    "serverless-esbuild": "^1.57.0",
+    "serverless-offline": "^13.9.0",
+    "typescript": "^5.9.3"
+  }
+}
